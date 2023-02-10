@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A-Frame-House</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene background="color: #FAFAFA">
+    <!--Asset Management-->
+    <a-assets>
+    <img id="Grass" src="Assets/Grass.jpeg">
+    <img id="Brick" src="Assets/Brick.jpeg">
+    <img id="Concrete" src="Assets/Concrete.jpeg">
+    <img id="Roofing" src="Assets/Roofing.jpeg">
+    <img id="Garage" src="Assets/Garage.jpeg">
+    <img id="Front_Door" src="Assets/Front_Door.jpeg">
+    </a-assets>
+
+    <!--House Lot-->
+    <a-plane 
+    color="#539D55"
+    position="0 0 -4"
+    rotation="-90 0 0"
+    scale="500 500 500"
+    src="Assets/Grass.jpeg">
+    </a-plane>
+
+    <!--Driveway-->
+    <a-box 
+    position="8.489 0.128 -3.182"
+    scale="5.590 0.01 -25"
+    src="Assets/Concrete.jpeg">
+    </a-box>
+
+    <!--Garage-->
+    <a-box 
+    position="8.445 2.482 -15.85"
+    scale="8 5 0"
+    src="Assets/Garage.jpeg"
+    ></a-box>
+    <a-box
+    position="4.25 0 -10.82"
+    scale="0.5 10 10"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box
+    position="-14.34 0 -10.9"
+    scale="0.5 10 10"
+    src="Assets/Brick.jpeg">
+    </a-box>
+
+    <!--Main House-->
+    <a-box
+    position="-9.235 0 -6.171"
+    scale="0.5 10 10.7"
+    rotation="180 -89.99 180"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box
+    position="-14.33 0 -20.81"
+    scale="0.5 10 10"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box
+    position="-9.569 0 -25.7"
+    scale="0.5 10 10"
+    rotation="180 -89.99 180"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box
+    position="0.287 0 -25.7"
+    scale="0.5 10 10"
+    rotation="180 -89.99 180"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box
+    position="12.647 0 -20.85"
+    scale="0.5 10 10"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box 
+    position="7.889 0 -25.72"
+    scale="0.5 10 10"
+    rotation="0 89.99 0"
+    src="Assets/Brick.jpeg">
+    </a-box>
+    <a-box 
+    position="0.056 2.439 -6.171"
+    scale="0.5 5.080 7.890"
+    rotation="0 89.99 0"
+    src="Assets/Front_Door.jpeg">
+    </a-box>
+    
+    <!--Roof)-->
+    <a-box 
+    position="-0.156 5.918 -15.31"
+    scale="21 0.05 10.59"
+    rotation="-8.484 -89.2 -0.186"
+    src="Assets/Roofing.jpeg">
+    </a-box>
+    <a-box 
+    position="-10.45 5.713 -15.314"
+    scale="21 0.05 10.59"
+    rotation="-10.23 89.99 0.002"
+    src="Assets/Roofing.jpeg">
+    </a-box>
+    
+</a-scene>
+</body>
+</html>
